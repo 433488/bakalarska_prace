@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <title>Do nekonečna a ještě dál</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        $(function(){
+            $("#over").click(function(){
+                window.location.href= '../index.html';
+            });
+
+        });
+    </script>
+</head>
+<body onkeydown="move(event)" style="background-color: #FFE4E1">
+    <h1 class="headText">Do nekonečna a ještě dál</h1>
+    <canvas id="scene" width="500" height="345">
+    </canvas>
+    <br>
+    <button onclick="start()" id="starter">Start</button>
+    <h2 class="time">00:00</h2>
+
+    <section id="popup" class="hide">
+        <div id="popup-bg">
+        </div>
+        <div id="popup-box">
+            <div id="popup-box-content">
+                <h1>Váš let trval:</h1>
+                <p><span class="score"></span></p>
+                <button onclick="restart()" id="starter">Znovu</button>
+                <button id="over">Konec</button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="rules">Pravidla:
+        <p style="font-weight: 400">
+            Pohybujte raketou šipkami nahoru a dolů tak,<br> aby raketa s číslem proletěla mezi meteority, <br> tak jak by
+            byla čísla řazená na číselné ose.
+        </p>
+    </div>
+    <script src="raketka.js"></script>
+    <script src="priklad.js"></script>
+    <script src="hra.js"></script>
+
+
+
+
+
+</body>
+</html>
