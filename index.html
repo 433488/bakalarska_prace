@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Interaktívne webové hry pre cvičenie základov matematiky</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <style>
+            .games:hover {
+                background-color: #D9D9F0;
+            }
+
+            .games{
+                margin: 20px; width: 200px; height: 150px; background-color: #BF3EFF; border: 1px solid black;
+                box-shadow: 3px 3px 15px black; text-align: center; float: left;
+            }
+        </style>
+
+        <script>
+            $(function(){
+                $("#raketa").click(function(){
+                    window.location.href= 'do_nekonecna_a_jeste_dal/index.html';
+                });
+
+            });
+        </script>
+
+    </head>
+
+<body style="background-color: #FFE4E1">
+<div id="main" style="background-color: #FF6A6A; border: 2px solid black; box-shadow: 5px 5px 20px #737373;
+             margin: 50px;">
+
+    <p style="font-size: 30px; color: #003366; text-align: center; margin: 0px; font-weight: bold;">Netradiční výukové hry</p>
+    <p style="font-size: 18px; color: black; text-align: center; font-weight: bold;">Bakalářská práce</p>
+
+</div>
+<div style="margin:50px;">
+
+    <div class="games" id="raketa">
+        <p style="font-weight: bold; font-size: 18px">Do nekonečna a ještě dál</p>
+        <img src="" />
+    </div>
+
+</div>
+
+</body>
+</html>
