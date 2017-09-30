@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <title>Čas nad zlato</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        $(function(){
+            $("#over").click(function(){
+                window.location.href= '../index.html';
+            })
+            $("#close").click(function(){
+                window.location.href= 'index.html';
+            });
+
+        });
+    </script>
+</head>
+<body onkeydown="move(event)" style="background-color: #FFE4E1">
+<h1 class="headText">Čas nad zlato</h1>
+<canvas id="canvas" width="400" height="400">
+</canvas>
+
+<div class="rightSide">
+    <div id="square" class="hide">
+        <section id="formTime">
+            <form>
+                <input class="buttonTime" id="button1" type="button" name="timeButton" onclick="checkAnswer(this.value)">
+                <input class="buttonTime" id="button2" type="button" name="timeButton" onclick="checkAnswer(this.value)">
+                <input class="buttonTime" id="button3" type="button" name="timeButton" onclick="checkAnswer(this.value)">
+            </form>
+        </section>
+    </div>
+</div>
+
+<br>
+<div class="buttons">
+    <button onclick="start()" id="starter">Start</button>
+    <h2 class="hide" id="score">Score: </h2>
+    <h2 class="hide" id="countScore">0</h2>
+    <button id="over">Konec</button>
+    <h2 id="time">01:00</h2>
+</div>
+
+
+<section id="popup" class="hide">
+    <div id="popup-bg">
+    </div>
+    <div id="popup-box">
+        <div id="popup-box-content">
+            <h1 id="message"></h1>
+            <p><span class="score"></span></p>
+            <button id="close">Zavřít</button>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<div id="rules">Pravidla:
+    <p style="font-weight: 400">
+        Vyberte správný čas, tak aby minutová ručička vzala zlato.<br>
+        Nasbírejte co nejvíce zlata za 3 minuty.
+    </p>
+</div>
+
+<script src="hra.js"></script>
+
+
+
+
+
+</body>
+</html>

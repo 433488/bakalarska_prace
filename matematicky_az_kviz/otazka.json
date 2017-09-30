@@ -1,0 +1,151 @@
+{
+  "quiz": [
+    {
+      "question": "Vyberte všechny možnosti: 10 decimetrů = ?",
+      "a": "1 metr",
+      "b": "0,1 metru",
+      "c": "100 centimetrů",
+      "correct": "a,c",
+      "type":"moreAnswer"
+    },
+    {
+      "question": "Číslo 56 je:",
+      "a": "Sudé",
+      "b": "Liché",
+      "correct": "Sudé",
+      "type":"yesNo"
+    },
+    {
+      "question": "Doplňte znaménko, tak aby byl příklad správně: 5 ? 8 = 40",
+      "a": "+",
+      "b": ":",
+      "c": "-",
+      "d": "*",
+      "correct": "d",
+      "type":"multiple"
+    },
+    {
+      "question": "Vypočítej: 5 - 3 = ?",
+      "a": "2",
+      "correct": "2",
+      "type": "count"
+    },
+    {
+      "question": "Vyber všechny zlomky v základním tvaru",
+      "a": "5/7",
+      "b": "3/6",
+      "c": "15/20",
+      "correct": "a",
+      "type":"moreAnswer"
+    },
+    {
+      "question": "Je sčítání komutativní?",
+      "a": "Ano",
+      "b": "Ne",
+      "correct": "Ano",
+      "type":"yesNo"
+    },
+    {
+      "question": "Nejblíže k číslu 1 je číslo?",
+      "a": "0,9",
+      "b": "1,1",
+      "c": "1,08",
+      "d": "0,89",
+      "correct": "c",
+      "type":"multiple"
+    },
+    {
+      "question": "Co je víc - šestina z 90 Kč, nebo čtvrtina z 64 Kč?",
+      "a": "šestina z 90 Kč",
+      "b": "čtvrtina z 64 Kč",
+      "correct": "čtvrtina z 64 Kč",
+      "type":"yesNo"
+    },
+    {
+      "question": "Měl jsem 20 korun. Utratil jsem jednu čtvrtinu. Kolik mi zůstalo korun?",
+      "a": "15",
+      "correct": "15",
+      "type": "count"
+    },
+    {
+      "question": "Vypočítejte: 1/3 + 1/6 = ?",
+      "a": "1/2",
+      "correct": "1/2",
+      "type": "count"
+    },
+    {
+      "question": "Doplňte správně znaménko: 0,25 ? 1/4",
+      "a": "<",
+      "b": "=",
+      "c": ">",
+      "d": "Všechny odpovědi jsou správné.",
+      "correct": "b",
+      "type":"multiple"
+    },
+    {
+      "question": "9 + 3= 12; Číslo 9 je v tomto případě součin?",
+      "a": "Ano",
+      "b": "Ne",
+      "correct": "Ne",
+      "type":"yesNo"
+    },
+    {
+      "question": "Doplňtě číslo do číselné řady (násobilka 3): 1 3 6 9 ?",
+      "a": "12",
+      "correct": "12",
+      "type": "count"
+    },
+    {
+      "question": "Číslo 78 je:",
+      "a": "jednociferné",
+      "b": "dvojciferné",
+      "c": "trojciferné",
+      "d": "čtyřciferné",
+      "correct": "b",
+      "type":"multiple"
+    },
+    {
+      "question": "Rozložte a doplňte: 7 = 3 + ?",
+      "a": "4",
+      "correct": "4",
+      "type": "count"
+    },
+    {
+      "question": "8 : 4 = 2; Číslo 8 je v tomto případě dělitel?",
+      "a": "Ano",
+      "b": "Ne",
+      "correct": "Ne",
+      "type":"yesNo"
+    },
+    {
+      "question": "Římské číslo XIV je:",
+      "a": "13",
+      "b": "14",
+      "c": "15",
+      "d": "16",
+      "correct": "b",
+      "type":"multiple"
+    },
+    {
+      "question": "Zaokrouhlete na desítky číslo 54:",
+      "a": "50",
+      "correct": "50",
+      "type": "count"
+    },
+    {
+      "question": "Doplňte správně znaménko: 3+4*2 ? 15-25:5",
+      "a": "<",
+      "b": "=",
+      "c": ">",
+      "d": "Všechny odpovědi jsou správně.",
+      "correct": "c",
+      "type":"multiple"
+    },
+    {
+      "question": "Převeďte: 420 mm = ? cm:",
+      "a": "42",
+      "correct": "42",
+      "type": "count"
+    }
+  ]
+}

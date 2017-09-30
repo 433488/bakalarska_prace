@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <title>Matematický Az-kvíz</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color: #FFE4E1">
+<h1 class="headText">Matematický Az-kvíz</h1>
+<div class="game">
+    <div class="leftSide">
+            <div id="cards" class="hide">
+                <div class="card">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                </div> <!-- .card -->
+            </div> <!-- #cards -->
+            <div id="beforeStart" class=""><span id="information">Zmáčkni start a začni hrát</span></div>
+    </div><!-- .leftSide -->
+
+    <div class="rightSide">
+        <div id="square" class="hide">
+
+            <section id="formYesNo" class="hide">
+                <form>
+                    <p class="questionText yesNoText">TEXT</p>
+                    <input class="buttonYesNo" id="buttonYes" type="button" name="yesNoButton" onclick="checkAnswer(this.value)">
+                    <input class="buttonYesNo" id="buttonNo" type="button" name="yesNoButton" onclick="checkAnswer(this.value)">
+                </form>
+            </section>
+
+            <section id="formMoreAnswer" class="hide">
+                <form>
+                    <p class="questionText moreText" id="try">TEXT</p>
+                    <label class="control control--checkbox">
+                        <input type="checkbox" name="checkboxAnswer" value="a"/>
+                        <div class="moreA textAnswer">First checkbox</div>
+                    </label>
+                    <label class="control control--checkbox">
+                        <input type="checkbox" name="checkboxAnswer" value="b"/>
+                        <div class="moreB textAnswer">Second checkbox</div>
+                    </label>
+                    <label class="control control--checkbox">
+                        <input type="checkbox" name="checkboxAnswer" value="c"/>
+                        <div class="moreC textAnswer">Thirt checkbox</div>
+                    </label>
+
+                    <input id="checkboxButton" type="button" value="Zkontrolovat" name="checkboxButton" onclick="checkAnswer()">
+                </form>
+            </section>
+
+            <section id="formMultiple" class="hide">
+                <form>
+                    <p class="questionText multipleText">Text</p>
+                    <label class="control control--checkbox">
+                        <input type="radio" name="radioAnswer" value="a"/>
+                        <div class="multipleA textAnswer">First checkbox</div>
+                    </label>
+                    <label class="control control--checkbox">
+                        <input type="radio" name="radioAnswer" value="b"/>
+                        <div class="multipleB textAnswer">Second checkbox</div>
+                    </label>
+                    <label class="control control--checkbox">
+                        <input type="radio" name="radioAnswer" value="c"/>
+                        <div class="multipleC textAnswer">Thirt checkbox</div>
+                    </label>
+                    <label class="control control--checkbox">
+                        <input type="radio" name="radioAnswer" value="d"/>
+                        <div class="multipleD textAnswer">Forth checkbox</div>
+                    </label>
+
+                    <input id="radioButton" type="button" value="Zkontrolovat" name="radioButton" onclick="checkAnswer()">
+                </form>
+            </section>
+
+            <section id="formCount" class="hide">
+                <form>
+                    <p class="questionText countText">Text</p>
+                    <input id="inputCount" maxlength="4" name="countAnswer" size="10" type="textarea" />
+                    <input id="countButton" type="button" value="Zkontrolovat" name="countButton" onclick="checkAnswer()">
+                </form>
+            </section>
+
+
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="start()" id="starter">Start</button>
+        <button id="over">Konec</button>
+        <h2 id="time">05:00</h2>
+    </div>
+
+</div>
+
+<section id="popup" class="hide">
+    <div id="popup-bg">
+    </div>
+    <div id="popup-box">
+        <div id="popup-box-content">
+            <h1 id="message">Gratuluji ti k výhře.</h1>
+            <button id="close" style="display: block; margin: 0 auto;">Zavřít</button>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<div id="rules">Pravidla:
+    <p style="font-weight: 400">
+        Pod každým políčkem se skrývá jedna otázka. Vaším úkolem je správně odpovídat na  <br>
+        otázky a získat tak políčka. Je potřeba propojit všechny 4 strany hracího pole.
+    </p>
+</div>
+
+<script src="hra.js"></script>
+
+
+
+
+
+</body>
+</html>
